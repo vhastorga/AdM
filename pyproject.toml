@@ -1,7 +1,7 @@
 [project]
 name = "tp-final-aprmaq"
 version = "0.1.0"
-description = "Trabajo Práctico Final — Aprendizaje de Máquina I (CEIA-FIUBA): Monitoreo de condición de un sistema hidráulico mediante ML"
+description = "TP final de Aprendizaje de Máquina I (CEIA-FIUBA): detección de fugas en la bomba de un sistema hidráulico"
 authors = [
     {name = "Nelson Martín Villagra", email = "nelsonmvillagra1976@gmail.com"},
     {name = "Víctor Hugo Astorga", email = "vhastorga@gmail.com"},
@@ -15,31 +15,7 @@ dependencies = [
     "numpy>=2.5.0",
     "optuna>=4.9.0",
     "pandas>=3.0.3",
-    "pyarrow>=20.0.0",
     "scikit-learn>=1.9.0",
-    "scipy>=1.18.0",
     "seaborn>=0.13.2",
     "xgboost>=3.3.0",
 ]
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[tool.hatch.build.targets.wheel]
-packages = ["tp_final_aprmaq"]
-
-[tool.pyright]
-extraPaths = ["."]
-
-[tool.ruff]
-target-version = "py312"
-line-length = 88
-
-[tool.ruff.lint]
-select = ["E", "F", "I", "N", "UP", "PL"]
-ignore = []
-
-[tool.ruff.format]
-quote-style = "double"
-indent-style = "space"

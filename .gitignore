@@ -1,3 +1,6 @@
+# Dataset (se descarga de Kaggle, ver README)
+data/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -5,20 +8,6 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints/
-
-# LaTeX
-*.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.log
-*.nav
-*.out
-*.snm
-*.synctex.gz
-*.toc
-*.vrb
 
 # OS / editor
 .DS_Store
