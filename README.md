@@ -4,7 +4,10 @@
 
 **Integrantes:** Nelson Martín Villagra y Víctor Hugo Astorga
 
-Usamos los datos de un banco de pruebas hidráulico (17 sensores, ciclos de 60 segundos) para clasificar el estado de la bomba principal en tres clases: sin fuga, fuga leve y fuga severa. Todo el trabajo (análisis, modelos, resultados y conclusiones) está en el notebook `tp_final.ipynb`.
+Usamos los datos de un banco de pruebas hidráulico (17 sensores, ciclos de 60 segundos) para clasificar el estado de la bomba principal en tres clases: sin fuga, fuga leve y fuga severa. El trabajo tiene dos notebooks:
+
+- `tp_final.ipynb` (Parte I): análisis exploratorio, baseline, comparación de modelos y elección del modelo.
+- `tp_final_parte2.ipynb` (Parte II): ponemos a prueba las conclusiones de la Parte I sacando los sensores calculados y evaluando con una temperatura que el modelo no vio.
 
 ### Dataset
 
@@ -36,8 +39,8 @@ El dataset no está incluido en este repositorio porque descomprimido pesa unos 
    uv sync
    ```
 
-3. Abrir el notebook y ejecutar todas las celdas (tarda unos 3 minutos):
+3. Abrir los notebooks y ejecutar todas las celdas (la Parte I tarda unos 3 minutos y la Parte II unos 2):
 
    ```bash
-   uv run jupyter notebook tp_final.ipynb
+   uv run jupyter notebook
    ```
